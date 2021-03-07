@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/fontawesome-free-5.5.0-web/css/all.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css'>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<title>Portfolio</title>
+</head>
+<body>
+	<div id="a"></div>
+	<header id="header" class='flex justify-between list-items'>
+			<img src="img/bluish-logo.png" alt="" id="logo" class='h-12 w-52'>
+			<nav class="navigation-menu flex items-end z-50 m-h-96">
+				<ul class="list w-full flex flex-col bg-red-600 z-50 absolute m-h-full justify-between items-center uppercase">
+					<li class="list-items"><a href="#a">home</a></li>
+					<li class="list-items"><a href="#skill">skills</a></li>
+					<li class="list-items"><a href="#projects-div">projects</a></li>
+					<li class="list-items"><a href="#footer">contact</a></li>
+
+				</ul>
+			</nav>
+			<div class="hamburger">
+				<div class="line"></div>
+			</div>
+	
+	</header>
+	<main id="banner">
+		<div class="split-div">
+			<p class="typewriter">exploring the technology...</p>
+		</div>
+			<h2 class="name">Prabesh</h2>
+			<h2 class="surname">Regmi</h2>
+			<p class="web">-Web <span class="txt-type" data-wait="3000" data-words='["Developer", "Designer"]'></span></p>
+			<ul class="social-media">
+				<li class="social-network"><a href="https://www.facebook.com/prabesh.regmi.7"><i class="fab fa-facebook-f fb"></i></a></li>
+				<li class="social-network"><a href=""><i class="fab fa-instagram"></i></a></li>
+				<li class="social-network"><a href=""><i class="fab fa-github"></i></a></li>
+				<li class="social-network"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+			</ul>
+	</main>
+	<i class="fas fa-arrow-down arrow"></i>
+	<div id="inspires-holder" class=''>
+		<div class="head">
+			<h2>What inspires me?</h2>
+		</div>
+		<div class='md:flex md:justify-around w-10/12 mx-auto' data-aos="zoom-in-up">	
+			<div class="w-full md:w-1/3 my-4">
+				<img src="img/elon.jpg" alt="">
+			</div>	
+			<div class=" w-full md:w-1/2  flex items-center justify-center">
+				<p class='text-lg leading-8'>"We are only here for so long, so it really
+					makes sense to love what we do! Whether
+					our career or something more personal is 
+					what we find most passionate in our lives, 
+					it is always a great idea to check in once in
+					a while and remind ourselves what drives 
+					this passion. Why do we love to “insert
+					passion here”?" Our greatest glory is not in never falling, but in rising every time we fall. 
+
+					I does not matte how slowly you go as ong as your do not stop. &
+					Hardships often prepare ordinary people for an extraordinary destiny."
+					<!-- <span class="mentor">-Steve Jobs</span> -->
+				</p>
+			</div>
+			
+		</div>
+	
+	<div class='md:flex md:justify-around w-10/12 mx-auto mt-12' data-aos="zoom-in-up">
+		
+		<div class="w-full md:w-1/2 flex items-center justify-center">
+				<p class='text-lg leading-8'>"When I was 17, I read a quote that went something
+					like: ‘If you live each day as ifit was your last, someday you’ll most certainly be right.’ It made an impression on me, and since then, for the past 3 years, I 
+					have looked in the mirror every morning and asked
+					myself: ‘If today were the last day of my life, would I
+					want to do what I am about to do today?’ And when-
+					ever the answer has been ‘no’ for too many days in a
+					 row, I know I need to change something."
+					 <!-- <span class="mentor">-Elon Musk</span> -->
+				</p>
+		</div>
+
+		<div class=" w-full md:w-1/3 h-full my-4">
+			<img src="img/steve.jpg" alt="">
+		</div>
+		</div>
+	
+	</div>
+	<div id='skill' class='empty'></div>
+	<div>
+		<div class="head2"><h2>What I Know</h2></div>
+
+		<div class='min-h-0 place-items-center grid gap-4 grid-center grid-cols-2 sm:grid-cols-3 md:grid-cols-3 md:w-1/2 mx-auto rounded-lg '>
+			<div data-aos="zoom-in"
+			data-aos-easing="linear"
+			data-aos-delay="100" class="m-h-40 w-40 ">
+				<div class='h-40 w-40 rounded-full overflow-hidden shadow-lg'>
+					<img class='' src="./img/react.jpeg" alt="">
+				</div>
+				<h3 class='text-gray-500 text-xl text-center'>React</h3>
+			</div>
+
+			<div data-aos="zoom-in"
+			data-aos-easing="linear"
+			data-aos-delay="200" class="m-h-40 w-40">
+				<div class='h-40 w-40  rounded-full overflow-hidden shadow-lg'>
+					<img class='' src="./img/redux.jpg" alt="">
+				</div>
+				<h3 class='text-gray-500 text-xl text-center'>Redux</h3>
+			</div>
+
+			<div data-aos="zoom-in"
+			data-aos-easing="linear"
+			data-aos-delay="300" class="m-h-40 w-40">
+				<div class='h-40 w-40  rounded-full overflow-hidden shadow-lg'>
+					<img class='' src="./img/fm.jpeg" alt="">
+				</div>
+				<h3 class='text-gray-500 text-xl text-center'>Framer Motion</h3>
+			</div>
+
+			<div data-aos="zoom-in"
+			data-aos-easing="linear"
+			data-aos-delay="400" class="m-h-40 w-40">
+				<div class='h-40 w-40  rounded-full overflow-hidden shadow-lg'>
+					<img class='' src="./img/node.jpeg" alt="">
+				</div>
+				<h3 class='text-gray-500 text-xl text-center'>NodeJS</h3>
+			</div>
+
+			<div data-aos="zoom-in"
+			data-aos-easing="linear"
+			data-aos-delay="500" class="m-h-40 w-40">
+				<div class='h-40 w-40  rounded-full overflow-hidden shadow-lg'>
+					<img class='' src="./img/mongo.jpeg" alt="">
+				</div>
+				<h3 class='text-gray-500 text-xl text-center'>MongoDB</h3>
+			</div>
+		
+			<div data-aos="zoom-in"
+			data-aos-easing="linear"
+			data-aos-delay="600" class="m-h-40 w-40">
+				<div class='h-40 w-40  rounded-full overflow-hidden shadow-lg'>
+					<img class='' src="./img/figma.jpeg" alt="">
+				</div>
+				<h3 class='text-gray-500 text-xl text-center'>Figma</h3>
+			</div>
+	</div>
+
+	<div id='projects-div' class='empty'></div>
+
+	<div>
+		<div class="projects-container">
+			<div class="head">
+				<h2>My Projects</h2>
+			</div>
+		
+			<div class="w-10/12 min-h-92 flex flex-col md:flex-row justify-center md:justify-around items-around md:items-center mx-auto">
+				<div data-aos="fade-up"
+				data-aos-easing="linear"
+				data-aos-duration="400" class="w-full md:w-1/3 shadow-md my-4 bg-gray-100 p-4 text-center"><img src="./img/suzuki_sc.png" alt=""><div><h3 class='text-2xl uppercase font-medium text-gray-600 pt-4'>Live Vehicle Tracker</h3><p class='text-sm text-gray-500'>React, Redux, Leaflet, NodeJs, PostgreSql</p></div></div>
+				<div data-aos="fade-up"
+				data-aos-easing="linear"
+				data-aos-duration="800" class="w-full md:w-1/3 shadow-md my-4 md:ml-4 bg-gray-100 p-4 text-center"><img src="./img/kipu_sc.png" alt=""><div><h3 class='text-2xl uppercase font-medium text-gray-600 pt-4'>Device-Patient Mgmt -Admin</h3><p class='text-sm text-gray-500'>React, Redux, Material UI, NodeJs, MongoDB</p></div></div>
+				<div data-aos="fade-up"
+				data-aos-easing="linear"
+				data-aos-duration="1200" class="w-full md:w-1/3 shadow-md my-4 md:ml-4 bg-gray-100 p-4 text-center"><img src="./img/pain2_sc.png" alt=""><div><h3 class='text-2xl uppercase font-medium text-gray-600 pt-4'>Medical Service Site</h3><p class='text-sm text-gray-500'>React, Redux, NodeJs, MongoDB</p></div></div>
+			</div>
+			<p class='text-center text-gray-400 text-sm p-4'>*Link to these can't be provided because of type of the sites they are and are running for corporates.</p>
+		</div>
+	</div>
+
+	<div id="contact-form" class='mb-8'>
+		<div class="head">
+				<h2>Reach Me</h2>
+		</div>
+		<div class="form mx-auto md:w-1/2 m-h-48 mb-8" data-aos='fade-up'>
+			<form action="" class='mx-auto w-11/12 flex flex-col items-center justify-center py-4'>
+				<div class="form-group flex flex-col">
+					<label for="" class='text-gray-700 text-sm'>Email</label>
+					<input type="text" class='h-10 w-96 bg-gray-200 rounded-sm'>
+				</div>
+				<div class="form-group flex flex-col mt-8">
+					<label for="" class='text-gray-700 text-sm'>Message</label>
+					<textarea type="text" class='h-10 w-72 bg-gray-200 rounded-sm h-48 w-96'></textarea>
+				</div>
+				<button class='bg-gray-900 hover:bg-gray-700 text-gray-100 py-2 px-12 mt-12 '>SEND</button>
+			</form>
+		</div>
+		
+	</div>
+	<div id='footer' class='empty'></div>
+
+	<footer class='h-32 w-full bg-blue-600 mt-8 flex justify-around items-center text-gray-200' >
+
+		<div class="flex flex-col h-24 p-4">
+			<p><i class="fas fa-phone"></i> 9805266825</p>
+			<p><i class="far fa-envelope"></i> prabeshregmi17@gmail.com</p>
+			<p><i class="fas fa-map-marker-alt"></i> Sankhamul, Kathmandu</p>
+		</div>
+		<p class="copy">&copy;prabeshregmi.com 2021</p>
+		
+	</footer>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easypiechart.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
