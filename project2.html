@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="a"></div> -->
+	<header id="header" class='flex flex-col md:flex-row md:justify-around md:items-center m-h-24 py-2'>
+			<a href='/'><img src="img/bluish-logo.png" alt="" id="logo" class='h-12 w-52 mx-auto md:mx-0'></a>
+			<nav class="navigation-menu h-full flex items-end md:mt-0">
+				<ul class="list flex z-50 justify-between items-center uppercase mx-auto md:mx-0">
+					<li class="list-items"><a href="/">home</a></li>
+					<!-- <li class="list-items"><a href="#skill">skills</a></li>
+					<li class="list-items"><a href="#projects-div">projects</a></li>
+					<li class="list-items"><a href="#footer">contact</a></li> -->
+
+				</ul>
+			</nav>
+	</header>
+    <div class='mx-auto text-center'><h2 class='text-2xl'> Device-Patient Mgmt -Admin</h2><span class='bg-yellow-400 px-4 py-1 rounded-lg'> Project Summary</span></div>
+
+    <main>
+
+        <div class='w-11/12 md:w-8/12 mx-auto grid grid-cols-1  md:flex md:justify-around mt-12' data-aos='zoom-in-up'>
+            <div class="w-full md:w-1/2"><img src="./img/kipu_sc.png" alt="" class='md:w-10/12'></div>
+            <div class="md:w-1/2 text-gray-500"><p>In the dashboard, current condition  of the factors like api, database and mqtt is checked. If running fine, green light is shown and red light is shown in case of problems. Graph of database usuage is shown and use of devices is shown in pie chart. Others, are basic stats.</p></div>
+        </div>
+
+        <div class='w-11/12 md:w-8/12 mx-auto grid grid-cols-1  md:flex md:justify-around mt-12' data-aos='zoom-in-up'>
+            <div class="md:w-1/2 text-gray-500 row-start-4 row-end-5"><p class='md:w-10/12'>Here, devices can be added, edited or deleted. CSV file can also be uploaded to add devices in bulk amount. Devices can be assinged to patients.</p></div>
+            <div class="md:w-1/2 row-start-3 row-end-4"><img src="./img/kip_devices.png" alt="" class='md:w-10/12 '></div>
+
+        </div>
+
+        <div class='w-11/12 md:w-8/12 mx-auto grid grid-cols-1  md:flex md:justify-around mt-12' data-aos='zoom-in-up'>
+            <div class="w-full md:w-1/2"><img src="./img/kip_hospitals.png" alt="" class='md:w-10/12'></div>
+            <div class="md:w-1/2 text-gray-500"><p>Hospitals can be added, suspended and edited here. And wards, room and patients of the hospital cane be viewed and manipulated here.</p></div>
+        </div>
+
+
+        <div class='w-11/12 md:w-8/12 mx-auto grid grid-cols-1  md:flex md:justify-around mt-12' data-aos='zoom-in-up'>
+            <div class="md:w-1/2 text-gray-500 row-start-4 row-end-5"><p class='md:w-10/12'>Same goes with patients.</p></div>
+            <div class="md:w-1/2 row-start-3 row-end-4"><img src="./img/kip_patients.png" alt="" class='md:w-10/12 '></div>
+
+        </div>
+
+
+        <div class='w-11/12 md:w-8/12 mx-auto grid grid-cols-1  md:flex md:justify-around mt-12' data-aos='zoom-in-up'>
+            <div class="w-full md:w-1/2"><img src="./img/kip_ecg.png" alt="" class='md:w-10/12'></div>
+            <div class="md:w-1/2 text-gray-500"><p>Live ECG Graph of patients can be seen. Live data is fetched by subscribing mqtt. </p></div>
+        </div>
+       
+    </main>
+    <p class='text-lg text-right text-blue-500 w-8/12 mx-auto mt-4'><a href='/project1.html'>See Next Project -></a></p>
+    <footer class='h-32 w-full bg-blue-600 mt-8 flex justify-around items-center text-gray-200' >
+
+		<div class="flex flex-col h-24 p-4">
+			<p><i class="fas fa-phone"></i> 9805266825</p>
+			<p><i class="far fa-envelope"></i> prabeshregmi17@gmail.com</p>
+			<p><i class="fas fa-map-marker-alt"></i> Sankhamul, Kathmandu</p>
+		</div>
+		<p class="copy">&copy;prabeshregmi.com 2021</p>
+		
+	</footer>
+
+    <script src="js/jquery.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script>
+        AOS.init();
+        $(window).scroll(function () {
+	if ($(this).scrollTop() > 10) {
+		$('#header').addClass('sticky');
+	} else {
+		$('#header').removeClass('sticky');
+	}
+});
+    </script>
+</body>
+</html>
